@@ -5,16 +5,41 @@
 }
 
 :root {
+    font-size: 62.5%;
+
     /* COLORS */
-    --brand-color-light: #6OA5FA;
+    --brand-color-light: #60A5FA;
     --brand-color-dark: #1D4ED8;
-    --bg-color: #OF172A;
+    --bg-color: #0F172A;
     --stroke-color: #1E293B;
     --text-color-primary: #f1f5f;
     --text-color-secondary: #cbd5e1;
 
     /* FONTS */
-    
+    --font-family: "Archivo", sans-serif;
+    --h1: 800 2.4rem/135% var(--font-family);
+    --h2: 800 1.6rem/140% var(--font-family);
+    --h3: 800 1.4rem/140% var(--font-family);
+    --text: 400 1.6rem/140% var(--font-family);
+    --text-span: 600 1.4rem/145% var(--font-family);
+    --text-sm: 400 1.4rem/160% var(--font-family);
+}
 
+body {
+    font: var(--text);
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+}
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--brand-color-light);
+}
+
+h1, h2, h3 {
+    font: inherit;
 }
