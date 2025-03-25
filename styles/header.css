@@ -1,6 +1,7 @@
 #primary {
     padding-block: 2rem;
 
+    /* nesting css */
     div {
         display: flex;
         align-items: center;
