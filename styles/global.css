@@ -12,7 +12,7 @@
     --brand-color-dark: #1D4ED8;
     --bg-color: #0F172A;
     --stroke-color: #1E293B;
-    --text-color-primary: #f1f5f;
+    --text-color-primary: #f1f5f9;
     --text-color-secondary: #cbd5e1;
 
     /* FONTS */
@@ -42,4 +42,19 @@ a:hover {
 
 h1, h2, h3 {
     font: inherit;
+}
+
+.container {
+    max-width: 128rem;
+    padding-inline: 3.2rem;
+    margin-inline: auto;
+}
+
+/* Utility-first */
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
 }
