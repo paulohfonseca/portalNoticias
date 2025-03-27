@@ -25,6 +25,10 @@ section#featured {
             bottom: 0; 
             padding: 2.4rem;
 
+            &:has(.text-lg){
+                padding: 1.2rem;
+            }
+
             h2 {
                 margin-top: 0.8rem;
             }
