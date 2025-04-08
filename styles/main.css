@@ -1,6 +1,15 @@
 main {
-    margin-top: 4rem;
-    gap: 8rem;
+    margin-block: 4rem;
+    row-gap: 8rem;
+    column-gap: 3.2rem;
+
+    grid-template-columns: 2fr 1.4fr;
+
+    grid-template-areas:
+    "featured featured"
+    "weekly weekly"
+    "ai aside"
+    ;
 }
 
 section header {
@@ -27,6 +36,8 @@ section header {
 }
 
 section#featured {
+    grid-area: featured;
+
     img {
         height: 100%;
     }
@@ -61,6 +72,8 @@ section#featured {
 }
 
 section#weekly {
+    grid-area: weekly;
+
     & > div {
         grid-template-columns: repeat(4, 29.2rem);
     }
@@ -84,5 +97,37 @@ section#weekly {
             margin-top: 0.8rem;
             font-weight: 800;
         }
+    }
+}
+
+section#ai {
+    grid-area: ai;
+
+    img {
+        width: 17.6rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin-block: 0.8rem 0.4rem;
+    }
+}
+
+aside {
+    grid-area: aside;
+}
+
+section#more {
+    margin-top: 3.2rem;
+
+    img {
+        width: 7.2rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin-top: 0.8rem;
     }
 }
